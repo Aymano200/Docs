@@ -1,5 +1,5 @@
 ---
-title: Server Installation
+title: Server Installation for Debian-based systems
 description: 'Welcome to our official documentation!'
 ---
 
@@ -10,6 +10,7 @@ Last updated: March 22nd, 2024.
 
 Learn how to host the site on your server and and deploy it to the public.
 
+<Warning>Although this tutorial works on a homeserver, it's not recommended to give out Interstellar links hosted on your home network. Doing so will reveal your IP address to others.</Warning>
 Please ensure you have all prerequisites installed.
 <AccordionGroup>
   <Accordion icon="rectangle-terminal" title="Installing Git">
@@ -100,11 +101,8 @@ apt install caddy
 <AccordionGroup>
   <Accordion icon="github" title="Clone our repository locally">
 
-```bash git
-git clone https://github.com/InterstellarNetwork/Interstellar
-```
-```bash cd 
-cd Interstellar
+```bash
+git clone https://github.com/InterstellarNetwork/Interstellar && cd Interstellar
 ```
   </Accordion>
   <Accordion icon="rectangle-terminal" title="Install Depenedices">
@@ -144,7 +142,7 @@ This is a very simple way to add domains to your caddyfile.
 ```bash nano
 nano /etc/caddy/Caddyfile
 ```
-Hold down ctrl+k until the file is empty.
+Hold down Ctrl+K until the file is empty.
   </Accordion>
       <Accordion icon="rectangle-terminal" title="Pointing domains at your server">
 Create an A record on your domain pointing to your VPS's IP address. Usually, the name on the A record will be your subdomain. Make sure to add this into the Caddyfile below.

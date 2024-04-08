@@ -1,0 +1,28 @@
+---
+title: Linking a deployment to FreeDNS
+description: "Welcome to our official documentation!"
+---
+FreeDNS provides you with free subdomains that can be **used with an existing Interstellar deployment.**
+
+# Activating an account
+Go to https://freedns.afraid.org and click "Subdomains", then click "Sign Up Free".
+
+Here, you can enter your email if you want. We do suggest using a temporarily email from https://smailpro.com though, just be sure to take note of your account credentials as you will not be able to recover the password at a later time.
+
+Enter a password, username, and email. Complete the captcha, then check your email for an account activation link.
+
+# Finding a domain
+On the sidebar, click "Registry", then sort domains by status (public).
+
+Find a domain that is unblocked for you by entering the domain into your device with the content filter. If it shows the blocked screen, move onto the next one. If it has a random site, gives an error (that isn't blocked), or something else, that domain is unblocked and you can use it.
+
+Go back to FreeDNS and click on the domain to add an A record. Type what you want the subdomain to be in the "name" box. Find the destination for your deployment service below and enter that. Then, complete the captcha.
+
+# Destinations
+You can find a destination by looking at your deployment service's documentation, but below are a few common destinations.
+
+Render: `216.24.57.1`
+
+Vercel: `76.76.21.21`
+
+Community-hosted BYOD: `5.161.66.1`

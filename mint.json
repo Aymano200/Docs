@@ -45,15 +45,17 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "VPS/Local Deploymemt",
       "pages": [
-        "introduction",
-        "server"
+        "windows-local",
+        "deb-server",
+        "community-byod"
       ]
     },
     {
-      "group": "Deployment Platforms",
+      "group": "SaaS Platforms",
       "pages": [
+        "freedns",
         "render",
         "codespaces"
       ]
