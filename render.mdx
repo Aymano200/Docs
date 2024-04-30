@@ -1,5 +1,72 @@
 ---
-title: Render Deployment
+title: Render Deployment + Docker
 description: 'Welcome to our official documentation!'
 ---
-# Coming soon!
+# How to make a Docker Image.
+- [Signup](https://hub.docker.com/signup) for Docker, or [Sign in](https://hub.docker.com/login)
+- Go to [security settings](https://hub.docker.com/settings/security)
+- Click **New Access Token**, Type Anything, then click Generate.
+- Copy and Close (This will be your **DOCKERHUB_TOKEN**)
+- Go to [your repositories](https://hub.docker.com/repositories/)
+- Create a Public Repository
+- Enter a Repo name and click Createe (This will be your **DOCKERHUB_NAME**)
+# Github Steps
+- Signup for Github if you haven't already
+- Visit [interstellar repo](https://github.com/InterstellarNetwork/Interstellar/fork), and click Create Fork
+- Click Settings or "..." on Mobile.
+- Scroll down and click **Secrets and Variables**, then click **Actions**
+- Click **New Repository Secret**
+- Create **DOCKERHUB_TOKEN** (This is the token you saved earlier.)
+- Create **DOCKERHUB_USERNAME** (This is the username of your Docker account.)
+- Create **DOCKERHUB_NAME** (This is your repository name on Docker)
+- Go to the top of your screen and click **Actions**, in between Pull Requests & Projects.
+- Click **Configure** under Docker Image
+- **Remove** all of the code in the box and replace it with this.
+```
+name: Publish image to Docker Hub
+
+on:
+  [workflow_dispatch]
+
+jobs:
+  publish_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: build
+        run: |
+          docker build . -t ${{ secrets.DOCKERHUB_USERNAME}}/${{ secrets.DOCKERHUB_NAME}}:latest
+      - name: publish
+        run: |
+          docker login -u ${{ secrets.DOCKERHUB_USERNAME}} -p ${{ secrets.DOCKERHUB_TOKEN}}
+          docker push ${{ secrets.DOCKERHUB_USERNAME}}/${{ secrets.DOCKERHUB_NAME}}:latest
+```
+- Click **commit changes**, then click commit changes again.
+- Go back to the **actions tab**
+- Click **Publish image** underneath "All workflows"
+- Click **Run workflow**, then click it again.
+- Click **All workflows** and wait for the circle to go from yellow to green.
+Notes
+<Warning>
+A. If you're on mobile, make sure the code is formatted and not all one line or it won't work.\
+B. If you want to make another docker repo, follow the same steps and put the new docker name in the Secrets tab. 
+</Warning>
+## How to Deploy to Render
+<Warning>Note: If your Render account gets suspended, you must use a different email to create another account.</Warning>
+### Temp Gmail Services:
+- [snailpro](https://smailpro.com/)
+- [emailnator](https://emailnator.com/)
+
+## Step 1
+- Go to [render dashboard](https://dashboard.render.com/), and make an account. (You must use Gmail or it will make you verify with payment information.)
+
+## Step 2
+- Click **New +** and then click **Web Service**.
+- Click **Deploy an existing image from a registry**
+- Put the link as the docker image you just made, and click next.
+
+## Step 3
+- Name the project
+- Make the instance type free
+- And then click **Create Web Service**.
