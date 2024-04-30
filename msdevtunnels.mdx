@@ -1,0 +1,29 @@
+---
+title: Microsoft Dev Tunnels Deployment
+description: 'Welcome to our official documentation!'
+---
+<Warning>This tutorial requires an already active deployment with something like Code Sandbox or GitHub Codespaces. 
+For this tutorial, I will be using Code Sandbox, but the process should be around the same. </Warning>
+
+- In Code Sandbox, create a new terminal.
+- Once it lets you type, enter 
+```
+curl -sL https://aka.ms/DevTunnelCliInstall | bash
+```
+- Next, enter 
+```
+source ~/.zshrc
+```
+- Next, run 
+```
+devtunnel login
+```
+- Follow the on-screen steps to login to Dev Tunnels. You aren't required to, but **I suggest making a fresh Microsoft account for this (you can also use the same Microsoft account for multiple Dev Tunnel links!).**
+
+- Run 
+**
+devtunnel host -p 8080 --allow-anonymous
+**
+- There should be a link next to "Connect via browser:", that is the link you just made.
+- Click continue. Don't worry about "Do not disclose personal information, such as credit card numbers or passwords.", 
+<Warning>If you don't trust it simply don't enter any passwords and just use it for YouTube or something that doesn't require sign in, or enter your password and remember to log out of whatever website you were using when you're done.</Warning>
