@@ -57,7 +57,11 @@
       "pages": [
         "freedns",
         "render",
-        "codespaces"
+        "codespaces",
+        "vercel",
+        "cyclic",
+        "koyeb",
+        "fl0"
       ]
     }
   ],
