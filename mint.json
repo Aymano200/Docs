@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Interstellar",
+  "name": "Interstellar Documentation",
   "logo": {
     "dark": "/favicon.png",
     "light": "/favicon.png"
@@ -45,7 +45,14 @@
   ],
   "navigation": [
     {
-      "group": "VPS/Local Deploymemt",
+      "group": "Using Interstellar",
+      "pages": [
+        "custom-background",
+        "tabcloak"
+      ]
+    },
+    {
+      "group": "Deployment - Local/Server",
       "pages": [
         "windows-local",
         "deb-server",
@@ -53,17 +60,15 @@
       ]
     },
     {
-      "group": "SaaS Platforms",
+      "group": "Deployment - SaaS Platforms",
       "pages": [
         "freedns",
         "render",
         "codespaces",
         "vercel",
-        "cyclic",
         "koyeb",
         "fl0",
-        "msdevtunnels",
-        "zeabur"
+        "msdevtunnels"
       ]
     }
   ],

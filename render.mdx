@@ -3,16 +3,16 @@ title: Render Deployment + Docker
 description: 'Welcome to our official documentation!'
 ---
 # How to make a Docker Image.
-- [Signup](https://hub.docker.com/signup) for Docker, or [Sign in](https://hub.docker.com/login)
+- [Sign up](https://hub.docker.com/signup) for Docker, or [sign in to an existing account](https://hub.docker.com/login)
 - Go to [security settings](https://hub.docker.com/settings/security)
-- Click **New Access Token**, Type Anything, then click Generate.
+- Click **New Access Token**, Type anything, then click Generate.
 - Copy and Close (This will be your **DOCKERHUB_TOKEN**)
 - Go to [your repositories](https://hub.docker.com/repositories/)
 - Create a Public Repository
-- Enter a Repo name and click Createe (This will be your **DOCKERHUB_NAME**)
+- Enter a repository name and click Create (This will be your **DOCKERHUB_NAME**)
 # Github Steps
-- Signup for Github if you haven't already
-- Visit [interstellar repo](https://github.com/InterstellarNetwork/Interstellar/fork), and click Create Fork
+- Sign up for GitHub if you haven't already
+- Visit [the Interstellar repository](https://github.com/InterstellarNetwork/Interstellar/fork), and click Create Fork
 - Click Settings or "..." on Mobile.
 - Scroll down and click **Secrets and Variables**, then click **Actions**
 - Click **New Repository Secret**
@@ -42,12 +42,12 @@ jobs:
           docker login -u ${{ secrets.DOCKERHUB_USERNAME}} -p ${{ secrets.DOCKERHUB_TOKEN}}
           docker push ${{ secrets.DOCKERHUB_USERNAME}}/${{ secrets.DOCKERHUB_NAME}}:latest
 ```
-- Click **commit changes**, then click commit changes again.
-- Go back to the **actions tab**
+- Click **Commit Changes**, then click Commit Changes again.
+- Go back to the **Actions tab**
 - Click **Publish image** underneath "All workflows"
 - Click **Run workflow**, then click it again.
 - Click **All workflows** and wait for the circle to go from yellow to green.
-Notes
+
 <Warning>
 A. If you're on mobile, make sure the code is formatted and not all one line or it won't work.\
 B. If you want to make another docker repo, follow the same steps and put the new docker name in the Secrets tab. 
@@ -55,11 +55,11 @@ B. If you want to make another docker repo, follow the same steps and put the ne
 ## How to Deploy to Render
 <Warning>Note: If your Render account gets suspended, you must use a different email to create another account.</Warning>
 ### Temp Gmail Services:
-- [snailpro](https://smailpro.com/)
-- [emailnator](https://emailnator.com/)
+- [Smailpro](https://smailpro.com/)
+- [Emailnator](https://emailnator.com/)
 
 ## Step 1
-- Go to [render dashboard](https://dashboard.render.com/), and make an account. (You must use Gmail or it will make you verify with payment information.)
+- Go to [the Render dashboard](https://dashboard.render.com/), and make an account. (You must use Gmail or it will make you verify with payment information.)
 
 ## Step 2
 - Click **New +** and then click **Web Service**.
