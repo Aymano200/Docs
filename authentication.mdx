@@ -1,0 +1,68 @@
+---
+title: Configuring authentication on an Interstellar fork
+description: 'Welcome to our official documentation!'
+---
+Beginning in Interstellar version 5.1.1, password protection is built into Interstellar and its settings can be easily modified.
+<Warning>Anyone with access to your Interstellar fork will be able to see your credentials.</Warning>
+
+# Video tutorial
+<video controls src="assets\video\v5-authentication.mp4"></video>
+---
+
+To start, ensure your fork is updated. Don't know how? Learn [here](/sync-fork)!
+
+1. Open your forked repository (not the main Interstellar repository), then open `config.json`.
+2. Click the pencil icon to edit.
+---
+The default config.json uses the username "Interstellar", and the password "password" by default. "challenge" is the setting where you can choose if you want authentication to be enabled or disabled.
+
+To turn on authentication, change `false` in `challenge: false,` to `true`. It should look like `challenge: true,`.
+
+To turn off authentication, change `true` in `challenge: true,` to `false`. It should look like `challenge: false,`.
+
+---
+3. Change "interstellar" to your desired username.
+4. Change what's in the quotes to your desired password.
+5. Click the green commit button.
+6. Click the commit button again. You don't have to edit the commit message or extended description. Make sure you are using "Commit directly to the main branch", and not  "Create a new branch for this commit and start a pull request".
+7. Deploy the changes you just made to your fork. If you are only adding one set of credentials, you're done!
+
+The example below shows one set of credentials with the username `user1` and password `password1`.
+```
+const config = {
+  challenge: true, // Set to true if you want to enable password protection.
+  users: {
+    // You can add multiple users by doing username: 'password'.
+    user1: "password1",
+  },
+}
+export default config
+```
+---
+# Optional
+Use the instructions below in conjunction with the instructions above if you need more than one set of credentials on Interstellar.
+
+8. Enable authentication and add your first set of credentials by following the steps listed above.
+9. For your next set of credentials, move your caret to the end of your first set of credentials (past the comma), and press enter.
+10. Enter the next set of credential's username, followed by a comma (;).
+11. Enter one space, and an apostrophe ('). Enter the next set of credential's password, and add another apostrophe ('), and a comma at the end.
+12. Repeat these steps for each credential you wish to add.
+13. Click the green commit button.
+14. Click the commit button again. You don't have to edit the commit message or extended description. Make sure you are using "Commit directly to the main branch", and not  "Create a new branch for this commit and start a pull request".
+15. Deploy the changes you just made to your fork.
+
+The example below shows five sets of credentials with the usernames `user1`, `user2`, `user3`, `user4`, and `user5`. The passwords are `password1`, `password2`, `password3`, `password4`, and `password5`.
+```
+const config = {
+  challenge: true, // Set to true if you want to enable password protection.
+  users: {
+    // You can add multiple users by doing username: 'password'.
+    user1: "password1",
+    user2: "password2",
+    user3: "password3",
+    user4: "password4",
+    user5: "password5",
+  },
+}
+export default config
+```

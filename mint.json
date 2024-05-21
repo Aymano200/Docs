@@ -52,23 +52,19 @@
       ]
     },
     {
-      "group": "Deployment - Local/Server",
+      "group": "Deployment",
       "pages": [
+        "authentication",
         "windows-local",
         "deb-server",
-        "community-byod"
-      ]
-    },
-    {
-      "group": "Deployment - SaaS Platforms",
-      "pages": [
         "freedns",
         "render",
         "codespaces",
         "vercel",
         "koyeb",
         "fl0",
-        "msdevtunnels"
+        "msdevtunnels",
+        "sync-fork"
       ]
     }
   ],
