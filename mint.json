@@ -24,23 +24,13 @@
   ],
   "topbarCtaButton": {
     "name": "Search now!",
-    "url": "https://gointerstellar.app"
+    "url": "https://standns.vercel.app"
   },
   "anchors": [
     {
       "name": "Get Started",
       "icon": "book-open-cover",
-      "url": "https://docs.gointerstellar.app/introduction"
-    },
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/interstellar"
-    },
-    {
-      "name": "Changelog",
-      "icon": "newspaper",
-      "url": "https://github.com/InterstellarNetwork/Interstellar/commits/main/"
+      "url": "/introduction"
     }
   ],
   "navigation": [
@@ -53,27 +43,5 @@
         "tabcloak",
         "tabs"
       ]
-    },
-    {
-      "group": "Deployment",
-      "pages": [
-        "authentication",
-        "windows-local",
-        "deb-server",
-        "freedns",
-        "render",
-        "codespaces",
-        "vercel",
-        "koyeb",
-        "fl0",
-        "msdevtunnels",
-        "sync-fork"
-      ]
     }
-  ],
-  "footerSocials": {
-    "discord": "https://discord.gg/interstellar",
-    "github": "https://github.com/interstellarnetwork",
-    "youtube": "https://youtube.com/@unblocking"
-  }
-}
+  ]
