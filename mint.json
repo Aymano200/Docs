@@ -15,12 +15,6 @@
       "to": "#5AA8E0"
     }
   },
-  
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hello@gointerstellar.app"
-    }
   ],
   "topbarCtaButton": {
     "name": "Search now!",
