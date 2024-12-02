@@ -2,16 +2,16 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Interstellar Documentation",
   "logo": {
-    "dark": "/dark-logo.png",
-    "light": "/light-logo.png"
+    "dark": "/favicon.png",
+    "light": "/favicon.png"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#1E3A8A",
+    "primary": "#3066BE",
     "light": "#5AA8E0",
-    "dark": "#111827",
+    "dark": "#3066BE",
     "anchors": {
-      "from": "#1E3A8A",
+      "from": "#3066BE",
       "to": "#5AA8E0"
     }
   },
@@ -23,7 +23,7 @@
     {
       "name": "Get Started",
       "icon": "book-open-cover",
-      "url": "https://standns.mintlify.app/introduction"
+      "url": "/introduction"
     }
   ],
   "navigation": [
