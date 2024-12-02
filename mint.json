@@ -2,16 +2,16 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Interstellar Documentation",
   "logo": {
-    "dark": "/favicon.png",
-    "light": "/favicon.png"
+    "dark": "/dark-logo.png",
+    "light": "/light-logo.png"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#3066BE",
+    "primary": "#1E3A8A",
     "light": "#5AA8E0",
-    "dark": "#3066BE",
+    "dark": "#111827",
     "anchors": {
-      "from": "#3066BE",
+      "from": "#1E3A8A",
       "to": "#5AA8E0"
     }
   },
@@ -37,5 +37,6 @@
         "tabs"
       ]
     }
-  ]
+  ],
+  "modeToggle": "dark"
 }
