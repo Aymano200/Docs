@@ -36,6 +36,16 @@
         "tabcloak",
         "tabs"
       ]
+    },
+    {
+      "group": "Utiliser Interstellar",
+      "pages": [
+        "faq",
+        "geforcenow",
+        "custom-background",
+        "tabcloak",
+        "tabs"
+      ]
     }
   ]
 }
