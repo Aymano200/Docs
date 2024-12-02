@@ -23,7 +23,7 @@
     {
       "name": "Get Started",
       "icon": "book-open-cover",
-      "url": "/introduction"
+      "url": "https://standns.mintlify.app/introduction"
     }
   ],
   "navigation": [
