@@ -1,0 +1,14 @@
+---
+title: Changer le fond d'écran d'Interstellar
+description: 'Bienvenue dans notre documentation officielle !'
+icon: image
+---
+# Tutoriel vidéo
+<video controls src="assets/video/v5-custom-background.mp4"></video>
+
+## Définir un fond d'écran personnalisé sur Interstellar V5 est facile
+1. Ouvrez Interstellar.
+2. **En dehors d'Interstellar**, trouvez une image. Copiez le lien de l'image.
+3. Retournez sur Interstellar et ouvrez l'onglet Paramètres.
+4. Collez le lien de l'image.
+5. Rafraîchissez la page.
