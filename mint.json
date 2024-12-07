@@ -31,6 +31,7 @@
       "group": "Using Interstellar",
       "pages": [
         "faq",
+        "nowgg",
         "geforcenow",
         "custom-background",
         "tabcloak",
@@ -40,11 +41,13 @@
     {
       "group": "Utiliser Interstellar",
       "pages": [
-        "faqfr",
-        "geforcefr",
-        "backfr",
-        "cloakfr",
-        "tabfr"
+        "FR_DOCS/faqfr",
+        "FR_DOCS/nowfr",
+        "FR_DOCS/geforcefr",
+        "FR_DOCS/backfr",
+        "FR_DOCS/cloakfr",
+        "FR_DOCS/tabfr",
+        "FR_DOCS/nowfr"
       ]
     }
   ]
