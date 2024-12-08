@@ -37,9 +37,11 @@
       ]
     },
     {
-          "group": "Jouer",
+      "group": "Jouer",
       "pages": [
         "robloxfr",
         "geforcefr"
+      ]
+    }
   ]
 }
