@@ -28,26 +28,18 @@
   ],
   "navigation": [
     {
-      "group": "Using Interstellar",
-      "pages": [
-        "faq",
-        "roblox",
-        "geforcenow",
-        "custom-background",
-        "tabcloak",
-        "tabs"
-      ]
-    },
-    {
       "group": "Utiliser Interstellar",
       "pages": [
         "faqfr",
-        "robloxfr",
-        "geforcefr",
         "backfr",
         "cloakfr",
         "tabfr"
       ]
-    }
+    },
+    {
+          "group": "Jouer",
+      "pages": [
+        "robloxfr",
+        "geforcefr"
   ]
 }
