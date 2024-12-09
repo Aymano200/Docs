@@ -23,18 +23,18 @@
     {
       "group": "Utiliser Interstellar",
       "pages": [
-        "faq",
-        "backfr",
-        "cloakfr",
-        "tabfr"
+        "fr/faq",
+        "fr/backfr",
+        "fr/cloakfr",
+        "fr/tabfr"
       ]
     },
     {
       "group": "Jouer",
       "pages": [
-        "robloxfr",
-        "geforcefr",
-        "callof_fr"
+        "fr/robloxfr",
+        "fr/geforcefr",
+        "fr/callof_fr"
       ]
     }
   ],
