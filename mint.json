@@ -22,7 +22,7 @@
   "anchors": [
     {
       "name": "Get Started",
-      "icon": "book-open-cover",
+      "icon": "image",
       "url": "/introduction"
     }
   ],
