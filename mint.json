@@ -19,13 +19,6 @@
     "name": "Go back!",
     "url": "https://standns.vercel.app"
   },
-  "anchors": [
-    {
-      "name": "Get Started",
-      "icon": "image",
-      "url": "/introduction"
-    }
-  ],
   "navigation": [
     {
       "group": "Utiliser Interstellar",
@@ -44,5 +37,22 @@
         "callof_fr"
       ]
     }
-  ]
+  ],
+  "anchors": [
+    {
+        "name": "API References",
+        "icon": "code",
+        "url": "api-references"
+    },
+    {
+        "name": "Content",
+        "icon": "pencil",
+        "url": "content"
+    },
+    {
+        "name": "Contact us",
+        "icon": "envelope",
+        "url": "https://mintlify.com/contact-us"
+    }
+]
 }
